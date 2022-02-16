@@ -8,6 +8,7 @@ const getSpeakers = gql`
     }
  } 
 `;
+//somechanges
 function Speakers(){
     const { loading, error, data} = useQuery(getSpeakers);
     if(loading) return <p>Loading...</p>
