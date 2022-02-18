@@ -1,0 +1,3 @@
+import{
+    gqlGetSpeakers
+}from './speakerquery';
