@@ -1,7 +1,7 @@
 import {DataTable} from 'primereact/datatable';
 import {Column} from 'primereact/column';
 
-const MyDataTable = ({speakers}) => {
+export const MyDataTable = ({speakers}) => {
 
     return(
         <DataTable value={speakers} >
@@ -12,4 +12,3 @@ const MyDataTable = ({speakers}) => {
     );
 
 }
-export default MyDataTable;

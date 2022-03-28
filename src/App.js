@@ -1,5 +1,5 @@
 import './App.css';
-import Speakers from './Speakers';
+import { Speakers } from './Components/speakers';
 import { Menu } from './Components/topMenu';
 function App() {
   return (
