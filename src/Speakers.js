@@ -1,5 +1,4 @@
 import { useQuery, gql } from "@apollo/client";
-import {Card} from "primereact/card";
 import MyDataTable from "./MyDataTable";
 
 const getSpeakers = gql`	
