@@ -1,3 +1,6 @@
-import{
+import {gqlGetSpeakers} from './speakers/speakerQuery';
+
+export 
+{
     gqlGetSpeakers
-}from './speakerquery';
+}

@@ -1,7 +1,6 @@
-import { useQuery, gql } from "@apollo/client";
+import { useQuery,gql } from "@apollo/client";
 import { MyDataTable } from "./table";
-
-const getSpeakers = gql`	
+const gqlGetSpeakers = gql`	
     query getSpeakers {
         speakers {                
         id,
@@ -10,9 +9,8 @@ const getSpeakers = gql`
         webSite
         }
     }`;
-
 export const Speakers = () => {
-    const {loading, error, data} = useQuery(getSpeakers);
+    const {loading, error, data} = useQuery(gqlGetSpeakers);
     if(loading)
         return <div>Loading...</div>
     if(error)
