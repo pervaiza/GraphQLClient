@@ -2,7 +2,7 @@ import './App.css';
 import { Speakers } from './Components/speakers';
 import { Menu } from './Components/topMenu';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <Menu />
@@ -10,5 +10,4 @@ function App() {
     </div>
   );
 }
-
 export default App;
