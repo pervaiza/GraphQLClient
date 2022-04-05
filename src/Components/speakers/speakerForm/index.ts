@@ -1,1 +1,1 @@
-export {AddSpeaker} from './addSpeaker';
+export { AddSpeaker } from './addSpeaker';

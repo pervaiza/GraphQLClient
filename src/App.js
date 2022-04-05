@@ -1,7 +1,6 @@
 import './App.css';
 import { Speakers } from './Components/speakers';
 import { Menu } from './Components/topMenu';
-
 const App = () => {
   return (
     <div className="App">
@@ -9,5 +8,5 @@ const App = () => {
       <Speakers />
     </div>
   );
-}
+};
 export default App;

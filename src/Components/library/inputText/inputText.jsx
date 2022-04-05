@@ -1,3 +1,2 @@
-export const InputText = () => {
-
-}
+// eslint-disable-next-line @typescript-eslint/no-empty-function
+export function InputText() {}
