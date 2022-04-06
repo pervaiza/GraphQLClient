@@ -1,11 +1,12 @@
-import { gql } from "@apollo/client";
+import { gql } from "@apollo/client"
 
-export const gqlGetSpeakers = gql`	
-    query getSpeakers {
-        speakers {                
-        id,
-        name,
-        bio,
-        webSite
-        }
-    }`;
+export const gqlGetSpeakers = gql`
+  query getSpeakers {
+    speakers {
+      id
+      name
+      bio
+      webSite
+    }
+  }
+`

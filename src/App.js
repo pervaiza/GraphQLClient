@@ -1,12 +1,12 @@
-import './App.css';
-import { Speakers } from './Components/speakers';
-import { Menu } from './Components/topMenu';
-const App = () => {
-  return (
-    <div className="App">
-      <Menu />
-      <Speakers />
-    </div>
-  );
-};
-export default App;
+import React from "react"
+import "./App.css"
+import { Speakers } from "./components/speakers"
+import { AddSpeaker } from "./Components/speakers/speakerForm"
+
+const App = () => (
+  <div className="App">
+    <AddSpeaker />
+    <Speakers />
+  </div>
+)
+export default App
