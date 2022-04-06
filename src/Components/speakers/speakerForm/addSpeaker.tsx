@@ -1,26 +1,26 @@
-import React from 'react';
-import { InputText } from 'primereact/inputtext';
-import { Button } from 'primereact/button';
-import { SpeakerModel, createEmptySpeaker } from './addSpeaker.Model';
-import { useFormik } from 'formik';
+import React from "react"
+import { InputText } from "primereact/inputtext"
+import { Button } from "primereact/button"
+import { useFormik } from "formik"
+import { SpeakerModel, createEmptySpeaker } from "./addSpeaker.Model"
 
 export const AddSpeaker = () => {
-  const initialValues = createEmptySpeaker();
-  const [formData, setFormData] = React.useState<SpeakerModel>(initialValues);
+  const initialValues = createEmptySpeaker()
+  const [formData, setFormData] = React.useState<SpeakerModel>(initialValues)
 
   const speakerForm = useFormik({
-    initialValues: initialValues,
+    initialValues,
     validate: (data) => {
-      const errors = {};
+      const errors = {}
 
-      return errors;
+      return errors
     },
     onSubmit: (data) => {
-      console.log(data);
-      setFormData(data);
-      speakerForm.resetForm();
-    }
-  });
+      console.log(data)
+      setFormData(data)
+      speakerForm.resetForm()
+    },
+  })
   return (
     <div className="flex justify-content-center">
       <h1>Add Speaker</h1>
@@ -52,5 +52,5 @@ export const AddSpeaker = () => {
         <Button type="submit" label="Submit" className="mt-2" />
       </form>
     </div>
-  );
-};
+  )
+}
