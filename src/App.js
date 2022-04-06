@@ -1,7 +1,7 @@
 import React from "react"
 import "./App.css"
 import { Speakers } from "./components/speakers"
-import { AddSpeaker } from "./Components/speakers/speakerForm"
+import { AddSpeaker } from "./components/speakers/speakerForm"
 
 const App = () => (
   <div className="App">
